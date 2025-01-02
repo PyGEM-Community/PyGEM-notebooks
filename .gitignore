@@ -1,0 +1,10 @@
+# pycache
+__pycache__/
+
+# vscode
+.vscode/
+
+# python bytecode
+*.pyc
+
+*.DS_Store
