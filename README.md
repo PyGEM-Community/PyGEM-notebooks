@@ -1,6 +1,8 @@
 # PyGEM-notebooks
 Included in this repository are a series of Jupyter notebooks intended to demonstrate the functionality of the [Python Glacier Evolution Model](https://github.com/drounce/PyGEM). These notebooks generally follow [PyGEM's documentation](https://pygem.readthedocs.io/en/latest/).
 
+>**Note:** These notebooks are set up to run with PyGEM>=v1.0.0 (which is currently in pre-release)
+
 ## Notebooks
 - [run_calibration](https://github.com/btobers/PyGEM-notebooks/blob/main/run_calibration.ipynb): demonstrates how to run PyGEM calibration routines<br>
 - [run_simulation](https://github.com/btobers/PyGEM-notebooks/blob/main/run_simulation.ipynb): demonstrates how to run individual or large-scale (regional) glacier simulations<br>
