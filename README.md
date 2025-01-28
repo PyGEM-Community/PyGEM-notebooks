@@ -6,6 +6,7 @@ Included in this repository are a series of Jupyter notebooks intended to demons
 ## Notebooks
 - [simple_test](https://github.com/btobers/PyGEM-notebooks/blob/main/simple_test.ipynb): simple introductory PyGEM test run using provided sample data for Khumbu Glacier<br>
 - [advanced_test](https://github.com/btobers/PyGEM-notebooks/blob/main/advanced_test.ipynb): a more advanced PyGEM test run, demonstrating Bayesian inference calibration and simulation, using provided sample data for Khumbu Glacier<br>
+- [advanced_test_tw](https://github.com/btobers/PyGEM-notebooks/blob/main/advanced_test_tw.ipynb): demonstrates calibration of the frontal ablation parameterization, using provided sample data for LeConte Glacier<br>
 - [run_calibration](https://github.com/btobers/PyGEM-notebooks/blob/main/run_calibration.ipynb): demonstrates how to run PyGEM calibration routines<br>
 - [run_simulation](https://github.com/btobers/PyGEM-notebooks/blob/main/run_simulation.ipynb): demonstrates how to run individual or large-scale (regional) glacier simulations<br>
 - [analyze_regional_change](https://github.com/btobers/PyGEM-notebooks/blob/main/analyze_regional_change.ipynb): demonstrates how to aggregate individual glacier simulations by region and climate scenario, and analyze the resulting regional change<br>
