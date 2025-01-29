@@ -1,6 +1,6 @@
 #!/bin/bash
 : << 'EOF'
-example shell script for running global PyGEM calibration and simulation
+example slurm script for running global PyGEM calibration and simulation
 
 call and execute this script like so:
 $sbatch ./pygem_wrapper.slurm
