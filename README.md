@@ -13,6 +13,9 @@ Included in this repository are a series of Jupyter notebooks intended to demons
 - [analyze_mcmc](https://github.com/btobers/PyGEM-notebooks/blob/main/analyze_mcmc.ipynb): demonstrates how to analyze the prior and posterior model parameters for an individual glacier following **MCMC** model calibration<br>
 - [analyze_mcmc_regional](https://github.com/btobers/PyGEM-notebooks/blob/main/analyze_mcmc_regional.ipynb): demonstrates how to analyze the performance of **MCMC** calibration for an entire region<br>
 
+## Wrappers
+Within the wrappers subdirectory, one can find a couple of example PyGEM wrappers for executing calibration and/or simulation using a shell script, or a slurm script.
+
+
 ## To-Do
 - Notebook demonstrating animations of PyGEM projections in 2d following ice redistribution
-- Frontal ablation calibration for tidewater glaciers
