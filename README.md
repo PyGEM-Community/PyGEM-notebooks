@@ -21,7 +21,7 @@ The notebooks listed below serve as more advanced demonstration of PyGEM. Runnin
 
 
 ## Wrappers 
-Within the wrappers subdirectory, one can find a couple of example PyGEM wrappers for executing calibration and/or simulation using a shell script, or a slurm script.
+Within the wrappers subdirectory, one can find example PyGEM wrappers for executing calibration and/or simulation using a shell script, or a slurm script.
 
 
 ## To-Do
