@@ -12,7 +12,7 @@ The following Jupyter notebooks are intended to allow for introduction and testi
 - [advanced_test_tw](https://github.com/btobers/PyGEM-notebooks/blob/main/advanced_test_tw.ipynb): demonstrates calibration of the frontal ablation parameterization, using provided sample data for LeConte Glacier<br>
 
 ### Further demonstration
-The notebooks listed below serve as more advanced demonstration of PyGEM. Running these notebooks requires more comprehensive datasets, as the sample data utilized in the above notebooks are subset to the two specified test glaciers.<br>
+The notebooks listed below serve as more advanced demonstration of PyGEM. However, running these notebooks requires more comprehensive datasets, as the sample data utilized in the above notebooks are subset to the two specified test glaciers. Complete PyGEM datasets used to run these notebooks (e.g., climate, reference mass balance, frontal ablation, etc.) can be downloaded [here](https://cmu.box.com/s/p8aiby5s9f3n6ycgmhknbgo4htk3pn9j).<br>
 - [run_calibration](https://github.com/btobers/PyGEM-notebooks/blob/main/run_calibration.ipynb): demonstrates how to run PyGEM calibration routines<br>
 - [run_simulation](https://github.com/btobers/PyGEM-notebooks/blob/main/run_simulation.ipynb): demonstrates how to run individual or large-scale (regional) glacier simulations<br>
 - [analyze_regional_change](https://github.com/btobers/PyGEM-notebooks/blob/main/analyze_regional_change.ipynb): demonstrates how to aggregate individual glacier simulations by region and climate scenario, and analyze the resulting regional change<br>
