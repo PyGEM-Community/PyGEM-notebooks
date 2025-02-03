@@ -31,7 +31,7 @@ ncores=4                # how many cores to parallize across -
 ########################
 #### gcms/scenarios ####
 ########################
-gcms=("AWI-CM-1-1-MR" "CMCC-ESM2" "EC-Earth3" "INM-CM4-8" "MPI-ESM1-2-HR" "MRI-ESM2-0" "NorESM2-MM" "TaiESM1")      # CMIP6 GCMS
+gcms=("BCC-CSM2-MR" "CESM2" "CESM2-WACCM" "EC-Earth3" "EC-Earth3-Veg" "FGOALS-f3-L" "GFDL-ESM4" "INM-CM4-8" "INM-CM5-0" "MPI-ESM1-2-HR" "MRI-ESM2-0" "NorESM2-MM")      # CMIP6 GCMS
 scenarios=("ssp245" "ssp370" "ssp585")
 ########################
 ######## other #########

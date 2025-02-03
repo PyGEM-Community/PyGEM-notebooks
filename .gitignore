@@ -8,3 +8,6 @@ __pycache__/
 *.pyc
 
 *.DS_Store
+
+# ipython
+.ipynb_checkpoints/
