@@ -1,5 +1,5 @@
 # PyGEM-notebooks
-Included in this repository are a series of Jupyter notebooks intended to demonstrate the functionality of the [Python Glacier Evolution Model (PyGEM)](https://github.com/PyGEM-Community/PyGEM).  These notebooks generally follow [PyGEM's documentation](https://pygem.readthedocs.io/en/latest/).
+Included in this repository are a series of Jupyter notebooks intended to demonstrate the functionality of the [Python Glacier Evolution Model (PyGEM)](https://github.com/PyGEM-Community/PyGEM).
 
 
 ## Notebooks
@@ -20,4 +20,4 @@ The notebooks listed below serve as more advanced demonstration of PyGEM.  Howev
 
 
 ## Wrappers 
-Within the wrappers subdirectory, one can find example PyGEM wrappers for executing calibration and/or simulation using a shell script, or a slurm script.
+Within the **wrappers** subdirectory, one can find example PyGEM wrappers scripts for executing calibration and/or simulation. These are useful for large-scale model runs.
