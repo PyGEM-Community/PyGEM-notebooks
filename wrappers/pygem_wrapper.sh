@@ -69,6 +69,9 @@ for gcm in ${gcms[@]}; do
     for scen in ${scenarios[@]}; do
         for reg in ${regions[@]}; do
             run_simulation -rgi_region01 $reg -gcm_startyear 2000 -gcm_endyear 2100 -gcm_name $gcm -scenario $scen -ncores $ncores  -option_dynamics OGGM -option_calibration MCMC -nsims 1
+        done
+    done
+done
 ########################
 
 # display runtime
