@@ -1,6 +1,9 @@
 #!/bin/bash
 : << 'EOF'
-example slurm script for running global PyGEM calibration and simulation
+example slurm script for running global PyGEM calibration and simulation, followed by regional aggregation.
+this is meant strictly as an example wrapper templat.
+note, in practice it is recommended to wrap calibration, simulation, and aggregation separately in case any issues arise
+and to keep job run time manageable. in this example we've combined these for simplicity.   
 
 call and execute this script like so:
 $sbatch ./pygem_wrapper.slurm
@@ -8,10 +11,11 @@ note, if the script does not execute at first you may need to make this wrapper 
 $chmod u+x ./pygem_wrapper.slurm
 EOF
 
-#SBATCH -J pygem_wrapper            # job name
-#SBATCH --nodes=1                   # number of nodes
-#SBATCH --ntasks=1                  # number of tasks
-#SBATCH --cpus-per-task=128         # how many cores to parallize across???
+#SBATCH -J pygem_wrapper                            # job name
+#SBATCH --nodes=1                                   # number of nodes
+#SBATCH --ntasks=1                                  # number of tasks
+#SBATCH --cpus-per-task=128                         # how many cores to parallize across???
+#SBATCH --output=/path/to/store/sbatch/output.out   # where to store sbatch output (optional)
 
 # variable declarations
 ########################
@@ -79,6 +83,17 @@ for gcm in ${gcms[@]}; do
     done
 done
 ########################
+
+
+########################
+### aggregation loop ###
+########################
+# note, directing output elswhere for aggregation, since stats will be printed on the % of glaciers successfully simulated
+# also note that the $ncores needed for aggregation may differ 
+# aggregation is typically done by region and scenario, so max number of cores needed is typically (#regions) x (#scenarios), i.e. 76 in this case ((19 regions) x (4 scenarios))
+postproc_compile_simulations -rgi_region01 $regions -gcm_name $gcms -scenario $scenarios -gcm_startyear 2000 -gcm_endyear 2100 -option_calibration MCMC -ncores $ncores > compile_log.txt
+########################
+
 
 # display runtime
 echo "TOTAL RUNTIME: "$(($SECONDS / 3600)) hrs $((($SECONDS / 60) % 60)) min $(($SECONDS % 60)) sec""

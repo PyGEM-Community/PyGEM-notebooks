@@ -1,6 +1,9 @@
 #!/bin/bash
 : << 'EOF'
-example shell script for running global PyGEM calibration and simulation
+example shell script for running global PyGEM calibration and simulation, followed by regional aggregation.
+this is meant strictly as an example wrapper template.
+note, in practice it is recommended to wrap calibration, simulation, and aggregation separately in case any issues arise
+and to keep job run time manageable. in this example we've combined these for simplicity.  
 
 call and execute this script like so:
 $./pygem_wrapper.sh
@@ -73,6 +76,17 @@ for gcm in ${gcms[@]}; do
     done
 done
 ########################
+
+
+########################
+### aggregation loop ###
+########################
+# note, directing output elswhere for aggregation, since stats will be printed on the % of glaciers successfully simulated
+# also note that the $ncores needed for aggregation may differ 
+# aggregation is typically done by region and scenario, so max number of cores needed is typically (#regions) x (#scenarios), i.e. 76 in this case ((19 regions) x (4 scenarios))
+postproc_compile_simulations -rgi_region01 $regions -gcm_name $gcms -scenario $scenarios -gcm_startyear 2000 -gcm_endyear 2100 -option_calibration MCMC -ncores $ncores > compile_log.txt
+########################
+
 
 # display runtime
 echo "TOTAL RUNTIME: "$(($SECONDS / 3600)) hrs $((($SECONDS / 60) % 60)) min $(($SECONDS % 60)) sec""
