@@ -5,9 +5,14 @@ Included in this repository are a series of Jupyter notebooks intended to demons
 ## Notebooks
 ### Model testing
 The following Jupyter notebooks are intended to allow for introduction and testing of PyGEM and may be run using sample data that should have been downloaded during model installation and setup (see [here](https://pygem.readthedocs.io/en/latest/install_pygem.html)), but can also be downloaded directly [here](https://drive.google.com/file/d/1Wu4ZqpOKxnc4EYhcRHQbwGq95FoOxMfZ/view?usp=drive_link).<br>
-- [simple_test](https://github.com/PyGEM-Community/PyGEM-notebooks/blob/main/simple_test.ipynb): simple introductory PyGEM test run using provided sample data for Khumbu Glacier<br>
+- [simple_test](https://github.com/PyGEM-Community/PyGEM-notebooks/blob/main/simple_test.ipynb): PyGEM test run using provided sample data for Khumbu Glacier<br>
 - [advanced_test](https://github.com/PyGEM-Community/PyGEM-notebooks/blob/main/advanced_test.ipynb): a more advanced PyGEM test run, demonstrating Bayesian inference calibration and simulation, using provided sample data for Khumbu Glacier<br>
 - [advanced_test_tw](https://github.com/PyGEM-Community/PyGEM-notebooks/blob/main/advanced_test_tw.ipynb): demonstrates calibration of the frontal ablation parameterization, using provided sample data for LeConte Glacier<br>
+#### Supplemental
+- [simple_test_daily](https://github.com/PyGEM-Community/PyGEM-notebooks/blob/main/simple_test_daily.ipynb): PyGEM test notebook to demonstrate the ability to run the model at a daily or monthly timestep using provided sample data for Gulkana Glacier<br>
+- [dhdt_processing](https://github.com/PyGEM-Community/PyGEM-notebooks/blob/main/dhdt_processing.ipynb): demonstrates the ability to process 2d dhdt data into glacierwide mass balance rates and binned elevation change for use in model calibration using provided sample data for Gulkana Glacier<br>
+- [advanced_test_spinup_elev_change_calib](https://github.com/PyGEM-Community/PyGEM-notebooks/blob/main/advanced_test_spinup_elev_change_calib.ipynb): demonstrates the ability to run glacier thickness inverison, dynamical spinup, and calibrate against binned elevation change data using provided sample data for Gulkana Glacier<br>
+
 >**Note:** The model testing notebooks listed above will only run on the specified glaciers, _unless_ all the necessary input data for other glaciers of interest are separately downloaded or exist elsewhere on one's computer (in which case, update the `root` path in *~/PyGEM/config.yaml*).  See below for futher information.
 
 ### Further demonstration
