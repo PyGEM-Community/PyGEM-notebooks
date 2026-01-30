@@ -22,6 +22,7 @@ The notebooks listed below serve as more advanced demonstration of PyGEM.  Howev
 - [analyze_regional_change](https://github.com/PyGEM-Community/PyGEM-notebooks/blob/main/analyze_regional_change.ipynb): demonstrates how to aggregate individual glacier simulations by region and climate scenario, and analyze the resulting regional change<br>
 - [analyze_mcmc](https://github.com/PyGEM-Community/PyGEM-notebooks/blob/main/analyze_mcmc.ipynb): demonstrates how to analyze the prior and posterior model parameters for an individual glacier following **MCMC** model calibration<br>
 - [analyze_mcmc_regional](https://github.com/PyGEM-Community/PyGEM-notebooks/blob/main/analyze_mcmc_regional.ipynb): demonstrates how to analyze the performance of **MCMC** calibration for an entire region<br>
+- [PyGEM_3d_projections](https://github.com/PyGEM-Community/PyGEM-notebooks/blob/main/PyGEM_3d_projections.ipynb): demonstrates how to compute a "median flowline" from an ensemble of binned glacier projections, then create 3D graphics and animations after redistributing the binned ice thickness to a 2D grid<br>
 
 
 ## Wrappers 
